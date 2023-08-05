@@ -12,6 +12,7 @@ const react = useSwc ? reactSwc : reactBabel;
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: './client',
   plugins: [react()],
   test: {
     css: true,
