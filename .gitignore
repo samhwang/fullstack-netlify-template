@@ -28,3 +28,6 @@ dist-ssr
 
 # Docker db
 db
+
+# env
+.env
