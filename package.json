@@ -1,7 +1,9 @@
 {
   "name": "@samhwang/fullstack-netlify-template",
   "version": "2.0.0",
+  "private": true,
   "description": "Fullstack Netlify Template",
+  "license": "ISC",
   "msw": {
     "workerDirectory": "client/public"
   },
