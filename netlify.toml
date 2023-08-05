@@ -1,7 +1,7 @@
 [build]
   framework = "vite"
   publish = "client/dist/"
-  command = "pnpm run ci && pnpm run test && pnpm run build"
+  command = "pnpm run ci && pnpm run test && pnpm run prisma:migrate:deploy && pnpm run build"
 
 [functions]
   directory = "backend/src/functions/"
