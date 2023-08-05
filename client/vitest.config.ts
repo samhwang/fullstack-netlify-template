@@ -14,5 +14,5 @@ export default mergeConfig(
         enabled: true,
       },
     },
-  }),
+  })
 );
