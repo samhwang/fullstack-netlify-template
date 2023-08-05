@@ -14,4 +14,4 @@
 [dev]
   autoLaunch = false
   targetPort = 5173
-  command = "vite --config client/vite.config.ts"
+  command = "pnpm run msw:init && vite --config client/vite.config.ts"

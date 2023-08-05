@@ -14,7 +14,7 @@
   },
   "packageManager": "pnpm@8.6.11",
   "scripts": {
-    "postinstall": "msw init client/public",
+    "msw:init": "msw init client/public",
     "dev": "netlify dev",
     "prebuild": "rimraf dist",
     "build": "vite build --config client/vitest.config.ts",
