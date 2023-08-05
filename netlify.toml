@@ -1,17 +1,18 @@
 [build]
-  framework = "vite"
-  publish = "client/dist/"
-  command = "pnpm run ci && pnpm run test && pnpm run prisma:migrate:deploy && pnpm run build"
+framework = "vite"
+publish = "client/dist/"
+command = "pnpm run ci && pnpm run test && pnpm run prisma:migrate:deploy && pnpm run build"
 
 [functions]
-  directory = "backend/src/functions/"
+directory = "backend/src/functions/"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
 
 [dev]
-  autoLaunch = false
-  targetPort = 5173
-  command = "pnpm run msw:init && vite --config client/vite.config.ts"
+autoLaunch = false
+targetPort = 5173
+framework = "vite"
+command = "vite --config client/vite.config.ts"

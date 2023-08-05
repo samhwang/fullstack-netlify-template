@@ -1,5 +1,3 @@
-/// <reference types="vite/client" />
-
 import { defineConfig } from 'vite';
 import reactBabel from '@vitejs/plugin-react';
 import reactSwc from '@vitejs/plugin-react-swc';
