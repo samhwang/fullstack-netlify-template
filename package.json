@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Fullstack Netlify Template",
   "msw": {
-    "workerDirectory": "public"
+    "workerDirectory": "client/public"
   },
   "type": "module",
   "engines": {

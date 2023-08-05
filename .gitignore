@@ -23,12 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Test Coverage
-coverage
-
-# Generated files
-public/mockServiceWorker.js
-.vitest-preview
-
 # Local Netlify folder
 .netlify
