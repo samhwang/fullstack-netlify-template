@@ -3,6 +3,9 @@
   publish = "client/dist/"
   command = "pnpm run ci && pnpm run test && pnpm run build"
 
+[functions]
+  directory = "backend/src/functions/"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
