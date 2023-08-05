@@ -1,7 +1,7 @@
 {
-  "name": "@samhwang/vite-react-starter-template",
-  "version": "1.0.0",
-  "description": "Vite + React + Netlify Starter Template",
+  "name": "@samhwang/fullstack-netlify-template",
+  "version": "2.0.0",
+  "description": "Fullstack Netlify Template",
   "msw": {
     "workerDirectory": "public"
   },
