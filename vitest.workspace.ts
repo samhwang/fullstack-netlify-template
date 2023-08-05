@@ -1,5 +1,3 @@
 import { defineWorkspace } from 'vitest/config';
 
-export default defineWorkspace([
-  'client',
-]);
+export default defineWorkspace(['client', 'backend']);
