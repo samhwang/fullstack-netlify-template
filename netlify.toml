@@ -1,7 +1,7 @@
 [build]
 framework = "vite"
 publish = "client/dist/"
-command = "pnpm run ci && pnpm run test && pnpm run prisma:migrate:deploy && pnpm run build"
+command = "./bin/prod.sh"
 
 [functions]
 directory = "backend/src/functions/"
@@ -15,4 +15,4 @@ status = 200
 autoLaunch = false
 targetPort = 5173
 framework = "vite"
-command = "vite --config client/vite.config.ts"
+command = "./bin/dev.sh"
