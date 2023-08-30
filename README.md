@@ -19,7 +19,7 @@ There are 3 ways that you can adopt this template.
   - [Prisma](https://prisma.io) - Next-generation Node.js and TypeScript ORM.
   - [tRPC](https://trpc.io) - End-to-end typesafe APIs made easy.
 - Common tools:
-  - [Rome](https://https://rome.tools/) for code formatting.
+  - [Biome](https://biomejs.dev/) for code formatting.
   - [Vitest](https://vitest.dev/) for running unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
   - [msw](https://mswjs.io/) to fake a service worker request to intercept API calls.
 
