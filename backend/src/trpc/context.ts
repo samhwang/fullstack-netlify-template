@@ -1,6 +1,6 @@
+import { PrismaClient } from '@prisma/client';
 import { inferAsyncReturnType } from '@trpc/server';
 import { CreateNetlifyContextOptions } from 'trpc-netlify-functions';
-import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 

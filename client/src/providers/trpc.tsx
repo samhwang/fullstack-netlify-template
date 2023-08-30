@@ -1,9 +1,9 @@
 import { QueryClient, QueryClientProvider, QueryErrorResetBoundary } from '@tanstack/react-query';
-import { createTRPCReact, httpBatchLink } from '@trpc/react-query';
-import type { AppRouter } from '../../../backend/src/trpc/router';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { createTRPCReact, httpBatchLink } from '@trpc/react-query';
+import { type ReactNode, Suspense } from 'react';
 import { ErrorBoundary, FallbackProps } from 'react-error-boundary';
-import { Suspense, type ReactNode } from 'react';
+import type { AppRouter } from '../../../backend/src/trpc/router';
 
 export const trpc = createTRPCReact<AppRouter>();
 
@@ -33,7 +33,7 @@ export function TRPCProvider({ children }: TRPCProviderProps) {
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools initialIsOpen={false} />
         <QueryErrorBoundary>
-          <Suspense fallback='Loading...'>{children}</Suspense>
+          <Suspense fallback="Loading...">{children}</Suspense>
         </QueryErrorBoundary>
       </QueryClientProvider>
     </trpc.Provider>
@@ -60,7 +60,7 @@ function QueryErrorBoundaryFallback({ resetErrorBoundary }: FallbackProps) {
   return (
     <div>
       There was an error!
-      <button type='button' onClick={() => resetErrorBoundary()}>
+      <button type="button" onClick={() => resetErrorBoundary()}>
         Try again
       </button>
     </div>
