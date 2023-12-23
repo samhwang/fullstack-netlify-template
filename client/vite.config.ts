@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { defineConfig } from 'vite';
 import reactBabel from '@vitejs/plugin-react';
 import reactSwc from '@vitejs/plugin-react-swc';
@@ -11,4 +13,14 @@ const react = useSwc ? reactSwc : reactBabel;
 export default defineConfig({
   root: './client',
   plugins: [react()],
+  test: {
+    css: true,
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['src/setupTests.ts'],
+    coverage: {
+      provider: 'v8',
+      enabled: true,
+    },
+  },
 });
